@@ -1,0 +1,101 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://src/UI/TopMenuContainer.gd" type="Script" id=1]
+[ext_resource path="res://src/UI/UI.gd" type="Script" id=2]
+[ext_resource path="res://assets/themes/UITheme.tres" type="Theme" id=4]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.0313726, 0.0313726, 0.0313726, 1 )
+shadow_color = Color( 0, 0, 0, 0.117647 )
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = ExtResource( 4 )
+
+[node name="TopMenuContainer" type="Panel" parent="."]
+margin_right = 480.0
+margin_bottom = 28.0
+custom_styles/panel = SubResource( 1 )
+script = ExtResource( 1 )
+
+[node name="MenuItems" type="HBoxContainer" parent="TopMenuContainer"]
+margin_left = 7.0
+margin_top = 2.0
+margin_right = 473.0
+margin_bottom = 24.0
+
+[node name="HelpMenu" type="MenuButton" parent="TopMenuContainer/MenuItems"]
+margin_right = 44.0
+margin_bottom = 25.0
+toggle_mode = false
+text = "Help"
+switch_on_hover = true
+
+[node name="UI" type="Panel" parent="."]
+margin_top = 28.0
+margin_right = 480.0
+margin_bottom = 270.0
+script = ExtResource( 2 )
+
+[node name="LeftIndex" type="OptionButton" parent="UI"]
+margin_left = 25.0
+margin_top = 81.0
+margin_right = 153.0
+margin_bottom = 117.0
+focus_mode = 0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Meter"
+items = [ "Meter", null, false, 0, null, "Decimeter", null, false, 1, null, "Centimeter", null, false, 2, null, "Yard", null, false, 3, null, "Foot", null, false, 4, null, "Inch", null, false, 5, null ]
+selected = 0
+
+[node name="UserInput" type="LineEdit" parent="UI"]
+margin_left = 25.0
+margin_top = 121.0
+margin_right = 225.0
+margin_bottom = 157.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+
+[node name="RightIndex" type="OptionButton" parent="UI"]
+margin_left = 255.0
+margin_top = 81.0
+margin_right = 383.0
+margin_bottom = 117.0
+focus_mode = 0
+text = "Unit"
+items = [ "Unit", null, false, 0, null, "Skybox Unit", null, false, 1, null ]
+selected = 0
+
+[node name="Result" type="LineEdit" parent="UI"]
+margin_left = 255.0
+margin_top = 121.0
+margin_right = 455.0
+margin_bottom = 157.0
+
+[node name="EqualSign" type="Label" parent="UI"]
+margin_left = 231.0
+margin_top = 119.0
+margin_right = 240.0
+margin_bottom = 138.0
+rect_scale = Vector2( 2, 2 )
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "="
+
+[node name="DeveloperSign" type="Label" parent="UI"]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -76.0
+margin_top = -29.0
+margin_right = -10.0
+margin_bottom = -10.0
+text = "degradka"
+
+[connection signal="item_selected" from="UI/LeftIndex" to="UI" method="_on_OptionButton_item_selected"]
+[connection signal="text_changed" from="UI/UserInput" to="UI" method="_on_LineEdit_text_changed"]
+[connection signal="item_selected" from="UI/RightIndex" to="UI" method="_on_OptionButton2_item_selected"]
+[connection signal="text_changed" from="UI/Result" to="UI" method="_on_Result_text_changed"]
