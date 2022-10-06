@@ -12,7 +12,7 @@
 
 ## Download
 Stable versions:
-- [~~GitHub Releases (Windows, Linux & Mac)~~](https://github.com/degradka/Valve-Hammer-Units-Converter/releases)
+- [GitHub Releases (~~Windows,~~ Linux ~~& Mac~~)](https://github.com/degradka/Valve-Hammer-Units-Converter/releases)
 
 ## Current features:
 - Convert *meters*, *decimeters*, *centimeters*, *yards*, *feet* and *inches* into *Hammer units* and *Hammer skybox units*
