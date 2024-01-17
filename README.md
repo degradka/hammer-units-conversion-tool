@@ -9,6 +9,12 @@
 </p>
 
 <p align="center">
+    <a>
+        <img src="screenshot.png" alt="Screenshot" width="350">
+    </a>
+</p>
+
+<p align="center">
     <a href="LICENSE">
         <img src="https://img.shields.io/badge/License-GPLv3-blue.svg" alt="GNU GPL v3 License" />
     </a>
