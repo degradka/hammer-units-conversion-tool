@@ -76,10 +76,10 @@ Make sure to check the [GitHub Releases](https://github.com/degradka/hammer-unit
 Feel free to reach out if you encounter any issues during the build process.
 
 ## Credits 🙌
-A massive shoutout to [SpAMCAN0](https://www.deviantart.com/spamcan0), the brilliant artist behind the high-res remake of the Hammer World Editor logo. 🎨
+A massive shoutout to [SpAMCAN0](https://www.deviantart.com/spamcan0), the brilliant artist behind the high-res remake of the Hammer World Editor logo.
 
 <p align="center">
     <img src="favicon.ico" alt="Hammer Units Conversion Tool Logo" width="80" height="80"/>
 </p>
 
-Feel free to dive in, use it for all your mapping needs, and spread the word! Contributions are more than welcome. 🌐
+Feel free to dive in, use it for all your mapping needs, and spread the word! Contributions are more than welcome.
