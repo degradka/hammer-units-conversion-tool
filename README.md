@@ -1,8 +1,8 @@
 <p align="center">
-    <h1 align = "center">Valve Hammer Units Converter</h1>
+    <h1 align = "center">Hammer Units Conversion Tool</h1>
 </p>
 <p align="center">
-    <h1 align = "center">THIS PROJECT IS GOING TO BE COMPLETELY REWRITTEN IN C WITH WXWIDGETS</h1>
+    <h1 align = "center">THIS PROJECT IS GOING TO BE COMPLETELY REWRITTEN IN RUST WITH EGUI</h1>
 </p>
 <p align="center">
     Valve Hammer Units Converter (VHUC) is an open source free tool which was made with Godot Engine, for converting real-world sizes into Valve Hammer's and vice versa. Free to use for everyone, forever!
